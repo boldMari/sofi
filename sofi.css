@@ -1,0 +1,112 @@
+.milestones-months,
+.oldtimer {
+	display: none;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	font-weight: normal;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0 20px;
+	text-decoration: none;
+	background: #e6ddde;
+	font-family: 'Raleway', sans-serif;
+}
+
+.content {
+	color: black;
+	font-size: 20px;
+	font-weight: normal;
+	border: thick;
+	text-align: center;
+	border-bottom: 1px solid #916a70;
+}
+
+.age-counter {
+	background-image: linear-gradient(to left, violet, indigo, skyblue, blueviolet,violet, lightpink, purple);
+  	color: transparent;
+  	background-clip: text;
+  	-webkit-background-clip: text;
+  	text-align: center;
+  	font-size: 40px;
+}
+
+h1 {
+	color: #654a4e;
+	padding: 30px;
+	font-size: 26px;
+}
+
+h2 {
+	color: #654a4e;
+}
+.name {
+	font-family: 'Mansalva', cursive;
+	text-align: center;
+	font-size: 30px;
+	background-color:#e1d2d1;
+	padding: 8px
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  float: left;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color:#654a4e;;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #654a4e;;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+
+.floatleft {
+	float: left;
+}
+ 
+.padding-8 {
+	padding: 8px;
+}
