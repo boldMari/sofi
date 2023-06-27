@@ -3,30 +3,15 @@ function daysInMonth (month, year) {
 }
 
 function showCorrectAge () {
-    const checkbox = document.querySelector('input[type="checkbox"]');
-    const nodeList = document.querySelectorAll(".toggle-label");
-
-    if (checkbox.checked) {
-        //document.getElementById('toggle-label').innerHTML = "Honzík";
-        getAge("1991/08/13 3:00:00");
-        
-        for (let i = 0; i < nodeList.length; i++) {
-          nodeList[i].innerHTML = "Honzík";
-        }
-    } else {
-        getAge("2022/10/27 13:01:00");
-        for (let i = 0; i < nodeList.length; i++) {
-          nodeList[i].innerHTML = "Sofia";
-        }
-    }
+     getAge("2022/10/27 13:01:00");
 }
 
 
-document.addEventListener('DOMContentLoaded', function () {
-  var checkbox = document.querySelector('input[type="checkbox"]');
+// document.addEventListener('DOMContentLoaded', function () {
+//   var checkbox = document.querySelector('input[type="checkbox"]');
 
-  checkbox.addEventListener('change', showCorrectAge);
-});
+//   checkbox.addEventListener('change', showCorrectAge);
+// });
 
 function printResults (years, months, days, hours, minutes, seconds) {
     document.getElementById('years').innerHTML = years;
@@ -79,9 +64,9 @@ function changeLabels (years, months, days, hours, minutes, seconds) {
 function showMilestones (years, months) {
     if (years === 0) {
         document.querySelector(".month-" + months).style.display = "block";
-        document.querySelector(".oldtimer").style.display = "none";
+        // document.querySelector(".oldtimer").style.display = "none";
     } else {
-        document.querySelector(".oldtimer").style.display = "block";
+        // document.querySelector(".oldtimer").style.display = "block";
         const nodeList = document.querySelectorAll(".milestones-months");
         for (let i = 0; i < nodeList.length; i++) {
           nodeList[i].style.display = "none";
